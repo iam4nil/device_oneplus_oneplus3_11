@@ -191,7 +191,7 @@ persist.data.iwlan.enable=true
 persist.vendor.radio.data_ltd_sys_ind=1
 persist.vendor.radio.data_con_rprt=1
 persist.radio.efssync=true
-#end
+
 
 # Display power reduction (FOSS)
 ro.vendor.display.sensortype=3
@@ -199,3 +199,7 @@ ro.vendor.display.paneltype=1
 ro.vendor.display.foss=1
 vendor.display.foss.config=1
 vendor.display.foss.config_path=/vendor/etc/FOSSConfig.xml
+
+#perf
+ro.vendor.perf.scroll_opt=true
+#end
