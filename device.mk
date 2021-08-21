@@ -399,6 +399,12 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+#Oneplus apps
+TARGET_SHIPS_oneplus_apps := true
+ifeq ($(TARGET_SHIPS_oneplus_apps),true)
+$(call inherit-product, vendor/oneplus/oneplus_apps/config.mk)
+endif
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
