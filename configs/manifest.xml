@@ -338,6 +338,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
+    
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.qtiradio</name>
         <transport>hwbinder</transport>
@@ -348,6 +349,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>slot2</instance>
         </interface>
     </hal>
+    
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.qtiradio</name>
         <transport>hwbinder</transport>
@@ -358,6 +360,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>slot2</instance>
         </interface>
     </hal>
+    
     <hal format="hidl">
         <name>vendor.qti.hardware.fm</name>
         <transport>hwbinder</transport>
@@ -367,6 +370,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
+    
     <hal format="hidl">
         <name>android.hardware.keymaster</name>
         <transport>hwbinder</transport>
@@ -376,6 +380,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
+    
     <hal format="hidl">
         <name>android.hardware.gatekeeper</name>
         <transport>hwbinder</transport>
@@ -385,6 +390,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
+    
     <hal format="hidl">
         <name>android.hardware.broadcastradio</name>
         <transport>hwbinder</transport>
@@ -394,6 +400,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
+    
     <hal format="hidl">
         <name>vendor.qti.hardware.wifi.supplicant</name>
         <transport>hwbinder</transport>
@@ -467,7 +474,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
          <instance>com.qualcomm.qti.uceservice</instance>
        </interface>
    </hal>
-
    <!-- IMS callinfo Service -->
    <hal format="hidl">
        <name>vendor.qti.ims.callinfo</name>
@@ -584,7 +590,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <name>ITuiComm</name>
             <instance>default</instance>
         </interface>
-
+    </hal>
     <!-- qdutils service -->
     <hal format="hidl">
         <name>vendor.qti.hardware.qdutils_disp</name>
