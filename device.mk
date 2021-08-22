@@ -393,10 +393,9 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
-#Oneplus apps
-TARGET_SHIPS_oneplus_apps := true
-ifeq ($(TARGET_SHIPS_oneplus_apps),true)
-$(call inherit-product, vendor/oneplus/oneplus_apps/config.mk)
+#Microg
+ifeq ($(TARGET_SHIPS_Microg),true)
+$(call inherit-product, vendor/oneplus/microg/config.mk)
 endif
 
 # Power

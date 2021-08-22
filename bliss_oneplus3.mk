@@ -44,6 +44,5 @@ TARGET_VENDOR := oneplus
 
 #Bliss stuffs
 $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
-BLISS_BUILD_VARIANT := vanilla
 TARGET_BOOT_ANIMATION_RES := 1080
 BLISS_BUILDTYPE := OFFICIAL
