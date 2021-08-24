@@ -6,6 +6,6 @@ CL_RST="\033[0m"
 
   case ${choice} in
   1) export TARGET_SHIPS_Microg=true && export BLISS_BUILD_VARIANT=vanilla && echo -e ${CL_GRN}"I like ya cut g :p"${CL_RST} ;;
-  2) export BLISS_BUILD_VARIANT=vanilla && echo -e ${CL_GRN}"Enjoy vanilla builds"${CL_RST} ;;
-  3) export BLISS_BUILD_VARIANT=gapps && echo -e ${CL_YLW}"Enjoy gapps builds"${CL_RST} ;;
+  2) export BLISS_BUILD_VARIANT=vanilla && TARGET_SHIPS_Microg=false && echo -e ${CL_GRN}"Enjoy vanilla builds"${CL_RST} ;;
+  3) export BLISS_BUILD_VARIANT=gapps && TARGET_SHIPS_Microg=false && echo -e ${CL_YLW}"Enjoy gapps builds"${CL_RST} ;;
   esac
