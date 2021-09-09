@@ -15,3 +15,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/legion_oneplus3.mk
+
+COMMON_LUNCH_CHOICES := \
+    legion_oneplus3-user \
+    legion_oneplus3-userdebug \
+    legion_oneplus3-eng

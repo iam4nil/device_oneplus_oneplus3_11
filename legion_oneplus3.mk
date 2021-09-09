@@ -25,7 +25,6 @@ $(call inherit-product, vendor/legion/config/common_full_phone.mk)
 
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2019-10-01
-
 PRODUCT_NAME := legion_oneplus3
 PRODUCT_DEVICE := oneplus3
 PRODUCT_MANUFACTURER := OnePlus
@@ -47,3 +46,6 @@ TARGET_VENDOR := oneplus
 
 #Legion stuffs
 #LEGION_BUILD_TYPE := OFFICIAL
+
+# Bootanimation Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
