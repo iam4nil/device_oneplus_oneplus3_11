@@ -21,12 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/oneplus3/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/palladium/config/common_full_phone.mk)
 
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2019-10-01
 
-PRODUCT_NAME := lineage_oneplus3
+PRODUCT_NAME := palladium_oneplus3
 PRODUCT_DEVICE := oneplus3
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -44,3 +44,16 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="$(BUILD_DESCRIPTION)"
 
 TARGET_VENDOR := oneplus
+
+# Bootanimation Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+
+#Official-build-only
+PALLADIUM_BUILD_TYPE := OFFICIAL
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.palladiumdevice.maintainer=Deepak Jr \
+    ro.palladiumdevice.cpu=MSM8996(821/820) \
+    ro.palladiumdevice.display=5.5 \
+    ro.palladiumdevice.displaytype=1080P \
+    ro.palladiumdevice.battery=3000mAh \
+    ro.palladiumdevice.camera=16MPx + 8MPx
