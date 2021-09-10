@@ -26,6 +26,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
 $(call inherit-product, vendor/oneplus/oneplus3/oneplus3-vendor.mk)
 
+#Legion
+TARGET_BOOT_ANIMATION_RES := 1080
+LEGION_BUILD_TYPE := OFFICIAL
+LEGION_MAINTAINER := Deepak_Jr
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USES_BLUR := true
+WITH_GAPPS := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay

@@ -24,4 +24,23 @@
        3 = right side
   -->
   <integer name="config_fingerprintSensorLocation">1</integer>
+  
+  <!-- Device specific doze package -->
+    <string name="config_customDozePackage">org.lineageos.settings/org.lineageos.settings.doze.DozeSettingsActivity</string>
+
+    <!-- Smart Charging -->
+    <bool name="config_supportSmartCharging">true</bool>
+
+    <!-- LegionOS About Overalys -->
+     <string name="legion_device_name_summary">OnePlus 3/3T</string>
+     <string name="legion_chipset_type_summary">Snapdragon 820/821</string>
+     <string name="legion_gpu_summary">Adreno 530</string>     
+     <string name="legion_camera_mp_summary">16 MP</string>
+     <string name="legion_screen_type_summary">Super AMOLED</string>
+     
+     <!-- Battery Health -->
+    <string name="config_batChargeCycle">/sys/class/power_supply/bms/cycle_count</string>
+    <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full_design</string>
+    <string name="config_batCurCap">/sys/class/power_supply/bms/charge_full</string>
+    <bool name="config_supportBatteryHealth">true</bool>
 </resources>
