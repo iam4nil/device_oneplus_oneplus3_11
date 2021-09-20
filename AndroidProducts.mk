@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bliss_oneplus3.mk
+    $(LOCAL_DIR)/candy_oneplus3.mk
