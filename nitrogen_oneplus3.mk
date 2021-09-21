@@ -23,7 +23,7 @@ $(call inherit-product, device/oneplus/oneplus3/device.mk)
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2019-10-01
 
-PRODUCT_NAME := bliss_oneplus3
+PRODUCT_NAME := nitrogen_oneplus3
 PRODUCT_DEVICE := oneplus3
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -42,7 +42,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 TARGET_VENDOR := oneplus
 
-#Bliss stuffs
-$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
+#NOS stuffs
+$(call inherit-product, vendor/nitrogen/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 BLISS_BUILDTYPE := OFFICIAL

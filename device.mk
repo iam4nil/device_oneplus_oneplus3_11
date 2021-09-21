@@ -26,9 +26,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
 $(call inherit-product, vendor/oneplus/oneplus3/oneplus3-vendor.mk)
 
+$(call inherit-product, vendor/nitrogen/config/phone-xxhdpi-4096-dalvik-heap.mk)
+$(call inherit-product, vendor/nitrogen/config/phone-xxhdpi-2048-hwui-memory.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
+
+PRODUCT_PACKAGES += \
+    charger_res_images
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -190,7 +196,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service
 
