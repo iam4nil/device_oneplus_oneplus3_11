@@ -43,6 +43,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 TARGET_VENDOR := oneplus
 
 #NOS stuffs
-$(call inherit-product, vendor/nitrogen/config/common.mk)
+$(call inherit-product, vendor/nitrogen/products/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 BLISS_BUILDTYPE := OFFICIAL
